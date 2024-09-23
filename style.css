@@ -1,0 +1,261 @@
+* {   /*tira o espaçamento padrão da página*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(250,250,250);
+    align-items: center; 
+    font-family:Arial, Helvetica, sans-serif ;
+}
+#logo{
+    display: flex;
+    border-radius: 5px;
+    position: fixed;
+    top: 0;
+    width: 13.4%;
+    height: 18%;
+}
+nav{
+    background-color: rgb(255, 255, 255);
+    position: fixed;   /* fixa a navegação na tela*/
+    width: 13.4%;
+    height: 68%;
+    border-radius: 5px;
+    top: 20%;
+    left: 0;   /*barra de navegação posicionada no canto esquerdo da tela*/
+}
+
+nav ul{
+    display: flex;   
+    flex-wrap: wrap;   
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+nav p{
+    margin-top: 8%;      /*espaço no topo do texto*/
+    text-align: center;
+    position: relative;   /*posição relativa para movimentar o texto na página*/
+    top: 4.5%;
+}
+nav ul li{
+    margin-top: 17%;
+    text-align: left;
+    position: relative;
+    left: 10%;
+    top: 25%;
+}
+nav ul li a, nav p{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: rgb(16, 104, 82);
+    
+}
+header{
+    background-color: rgb(255, 255, 255);
+    width: 65%;
+    height: 150vh;
+    position: relative;
+    left: 18%;
+}
+header h1, header h3, header p, header small{   /*agrupa todo o texto da header permitindo modificá-los juntos*/
+    position: relative;   /*ajustar posição*/
+    top: 15%;
+    margin-bottom: 2%;    /*espaçamento entre os elementos*/
+    width: 70%;           /*tamanho do container*/
+    text-align: left;
+    left: 11%;
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+h3, p{
+    font-size: 15px;
+    font-weight: 200;
+}
+h3, p, small{
+    color: #333;
+}
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    position: relative;
+    top: 20%;
+    left: 9.5%;
+    width: 80%;
+    flex-grow: 1;
+}
+#facebook, #instagram, #whatsapp{  
+    background-color: rgb(240, 240, 240);
+    width: 36vh;
+    height: 7vh;
+    border-radius: 10px;
+    display: flex;             /*container flexível*/
+    flex-wrap: wrap;
+    align-items: center;       /*alinhado ao centro verticalmente*/
+    justify-content: center;   /*alinhado ao centro horizontalmente*/
+}
+#facebook{
+    color: rgb(0, 102, 255);
+}
+#instagram{
+    color: rgb(229, 59, 235);
+}
+#whatsapp{
+    color: rgb(82, 221, 94);
+}
+header figure img {
+    width: 80%;
+    height: 55vh;
+    border-radius: 2px;
+    position: relative;
+    left: 9.5%;
+    margin-top: 23%;
+}
+header figcaption{
+    left: 9.5%;
+    position: relative;
+    font-size: 12px;
+}
+.home, .causas, .consequencias, .prevenção, .galeria{     /*modificação padrão para todas as seções*/
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    width: 65%;
+    height: 200vh;
+    position: relative;
+    left: 18%;   
+}
+.intro{
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    width: 65%;
+    height: 100vh;
+    position: relative;
+    left: 18%;
+}
+.intro h2, .intro p, .intro ul, .causas h2, .causas p, .consequencias h2, .consequencias p, .prevenção h2, .prevenção p, .prevenção ul{  /*modificação padrão para todos os textos das seções*/
+    position: relative;     /*posição na tela*/
+    top: 6%;                /*o texto das seções iniciam 6% do topo*/
+    margin-bottom: 5px;     /*espaçamento entre os elementos*/
+    width: 70%;             /*tamanho dos containers*/
+    text-align: left;
+    left: 20vh;
+}
+.intro p, .intro ul, .intro li, .causas p, .consequencias p, .prevenção p, .prevenção ul, .prevenção li{
+    color: #333;          /*todos os textos da página terão a cor #333*/
+    font-size: 16px;
+    margin-bottom: 2%;      /*espaçamento entre os textos*/
+}
+.intro li, .prevenção li{   /*alinha todas as listas com os textos da página*/
+    left: 15px;
+    position: relative;
+}
+.causas figure img{
+    width: 68%;
+    height: 30vh;
+    border-radius: 2px;
+    position: relative;
+    left: 13.7%;
+}
+.causas figcaption{
+    left: 13.7%;
+    position: relative;
+    font-size: 12px;
+    width: 70%;
+    margin-bottom: 2%;
+}
+#textos{
+    position: relative;
+    top: 6%;
+}
+#consequencias1, #consequencias3{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;   
+    position: relative;
+}
+#consequencias2{
+    display: flex;
+    width: 90%;
+    position: relative;
+    left: 14.5%;
+}
+.consequencias p{
+    margin-bottom: 10%;
+}
+.consequencias figure img{
+    width: 90%;
+    height: 30vh;
+    border-radius: 2px;
+    position: relative;
+}
+#texto4, #texto5, #texto6{
+    width: 40%;
+    left: 7.3%;
+}
+#consequencias1 figcaption, #consequencias2 figcaption, #consequencias3 figcaption{
+    left: 0;
+    position: relative;
+    width: 70%;
+    font-size: 12px;
+}
+.prevenção figure img{
+    width: 40%;
+    height: 55vh;
+    border-radius: 2px;
+    position: relative;
+    left: 25%;
+    margin-top: 12%;
+}
+.prevenção figcaption{
+    left: 25%;
+    position: relative;
+    font-size: 12px;
+    width: 70%;
+}
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 fotos por linha */
+    grid-row-gap: 2%; /* Espaçamento entre as linhas */
+    grid-column-gap: 15px; /* Espaçamento entre as colunas */
+    padding: 10px; /* Espaçamento ao redor da galeria */
+}
+
+.galeria img {
+    width: 100%;
+    height: 60%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.galeria h2{
+    position: relative;   
+    top: 6%;                
+    margin-bottom: 5px;     
+    width: 130%;             
+    left: 20vh;
+}
+footer{
+    background-color: rgb(8, 49, 39);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+footer li {
+    list-style: none;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
